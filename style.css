@@ -1,115 +1,75 @@
-*{
+/* General */ 
+* {
     margin: 0; 
     padding: 0; 
-    font-family: "Helvetica", Arial, sans-serif;
-    box-sizing: border-box
 }
 
-body{
-    background: black;
-    color: white; 
+body {
+    font-family: Montserrat, Arial; 
+    background-color: rgb(225, 225, 225); 
+}
+html {
+    scroll-behavior: smooth;
+}
+p {
+    color: rgb(74, 74, 74); 
 }
 
-#header{
-    width: 100%; 
-    height: 100vh; 
-    background-image: url(images/bestback.png);
-    background-size: 100%;
-    background-position: center; 
-    background-repeat: no-repeat;
-}
-.container{
-    padding: 10px 10%; 
-}
+/* Transition */ 
+ a, .btn {
+    transition: all 0.15 ease; 
+ }
 
-nav{
-    display: flex;
+ /* Nav */ 
+ nav, .nav-links {
+    display: flex; 
+ }
+
+ nav {
+    justify-content: space-around;
     align-items: center; 
-    justify-content: space-between; 
-}
-nav ul{
-    margin: 0; 
-    padding: 0; 
-    text-align: right;  
-    margin-right: -120px; 
+    height: 14vh; /* 17% of screen */ 
+    background-color: lightpink;
+ }
+
+ .nav-links {
+    gap: 2rem; /* ~16px, but adjustable */ 
+    list-style: none; /* remove bullet points */ 
+    font-size: 1.5rem;
+ }
+ 
+ .nav-links a {
+    color: black; 
+    text-decoration: none;
+    text-decoration-color: white; 
+ }
+ .nav-links a:hover {
+    color: grey; 
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: lightblue;
+ }
+ .logo {
+    font-size: 2rem;
+ }
+ .logo:hover {
+    cursor: default; 
+ }
+
+ /* Hamburger Menue */ 
+#hamburger-nav {
+    display: flex; 
 }
 
-.logo{
-    width: 300px; 
-
-}
-nav ul li{
-    display: inline-block;
-    list-style: none; 
-    margin: 20px 70px; 
-    position: center; 
-}
-
-nav ul li a{
-    color: white;
-    text-decoration: none; 
-    font-size: 22px; 
-    align-items: left;
+.hamburger-menue {
     position: relative; 
+    display: inline-block; 
 }
-nav ul li a::after{
-    content: '';
-    width: 0; 
-    height: 3px; 
-    position: absolute; 
-    background: rgb(255, 0, 0);
-    left: 0; 
-    bottom: -6px; 
-    transition: 0.5s; 
-}
-nav ul li a:hover::after{
-    width: 100%; 
-}
-.header-text h1{
-    margin-top: 20%; 
-    font-size: 50px; 
-}
-.header-text h1 span{
-    color: #ff004f; 
-
-}
-
-#about{
-    padding: 100px 0; 
-    color: #ababab; 
-    font-size: 20px; 
-}
-.row{
+.hamburger-icon { 
     display: flex; 
+    flex-direction: column;
     justify-content: space-between; 
-    flex-wrap: wrap; 
-}
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    margin-left: 150px;
-    width: 70%; 
-    border-radius: 20%;
-}
-
-.about-col-2{
-    flex-basis: 60%; 
-}
-
-.sub-title{
-    font-size: 60px; 
-    font-weight: 600; 
-    color: white; 
-}
-.tab-titles{
-    display: flex; 
-    margin: 20px 0 40px; 
-}
-.tab-links{
-    margin-right: 50px; 
-    font-size: 18px; 
-    font-weight: 500; 
-    cursor: pointer;
-    position: left; 
+    height: 24px; 
+    width: 30px; 
+    cursor: pointer; 
 }
