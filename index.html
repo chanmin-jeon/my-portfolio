@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chanmin Jeon Personal-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqureies.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <link rel="stylesheet" href="styles/section.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,
+    100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap" 
+    rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +23,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -41,7 +45,192 @@
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section-container">
+            <div class="profile-pic-container">
+                <img src="images/bw49639.jpg">
+            </div>
+            <div class="profile-text">
+                <p class="profile-text-p1">Hello, I'm</p>
+                <h1 class="title">Chanmin Jeon</h1>
+                <p class="profile-text-p2">Aspiring Software Engineer</p>
+                <div class="btn-container">
+                    <button class="btn-cv" onclick="window.open('/images/resume')">Download CV</button>
+                    <button class="btn-info" onclick="location.href='/#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="images/linkedin.png" 
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/chanmin-jeon-5aa7422a7/'">
+                    <img src="images/github.png" 
+                    class="icon"
+                    onclick="location.href='https://github.com/chanmin-jeon/'">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="profile-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-pic-container">
+                <img src="images/IMG_0824.HEIC" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img src="images/experience.png" 
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Software Engineer</p>
+                    </div>
+                    <div class="details-containers">
+                        <img src="images/education.png" 
+                            class="icon">
+                        <h3>Education</h3>
+                        <p>University of Alberta<br />B.Sc. Computing Science<br/>
+                        Minor in Economics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! I'm a passionate and dedicated Computer Science 
+                        student with a strong foundation in web development and 
+                        a keen interest in becoming a software engineer. I have 
+                        a solid grasp of HTML and CSS, and I am proficient in multiple 
+                        programming languages including Python, C, and RISC-V. My coursework 
+                        and self-directed learning have also equipped me with a deep 
+                        understanding of data structures and algorithms, time/space complexities,
+                        as well as object-oriented programming.
+                    </p>
+                    <br />
+                    <p>
+                        I am continually expanding my 
+                        skill set and keeping up with the latest technologies and industry trends. 
+                        I thrive on solving complex problems and am always looking for new challenges 
+                        to grow as a developer. My goal is to leverage my technical skills and 
+                        knowledge to create innovative and efficient web applications and software
+                        solutions. 
+                    </p>
+                    <br />
+                    <p>
+                        Feel free to explore my portfolio to see some of the projects I've worked on. 
+                        I'm excited about the future of web development and look forward to 
+                        contributing to impactful and cutting-edge projects!<br /> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#experience'">
+    </section>
+    <section id="skills">
+        <p class="profile-text-p1">Showcase of</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Wev Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>Git/Github</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>RISC-V</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Computing Fundamentals</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>Data Structures</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>Algorithms</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>Time/Space Complexity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="images/checkmark.png" class="icon">
+                            <div>
+                                <h3>Object-Oriented Programming</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#experience'">
+    </section>
     <script src="script.js"></script>
 </body>
-
 </html>
