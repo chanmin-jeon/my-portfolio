@@ -6,15 +6,14 @@
     <title>Chanmin Jeon Personal-Portfolio</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/hamburger.css">
-    <link rel="stylesheet" href="styles/mediaqueries.css">
     <link rel="stylesheet" href="styles/section.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,
     100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap" 
     rel="stylesheet">
 </head>
-
 <body>
     <nav id="desktop-nav">
         <div class="logo">
@@ -23,7 +22,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -39,33 +38,31 @@
             </div>
             <div class="menue-links">
                 <li><a href="#about" onclick="toggleMenue()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenue()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenue()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenue()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenue()">Contact</a></li>
             </div>
         </div>
     </nav>
     <section id="profile">
-        <div class="section-container">
-            <div class="profile-pic-container">
-                <img src="images/bw49639.jpg">
+        <div class="profile-pic-container">
+            <img src="images/bw49639.jpg">
+        </div>
+        <div class="profile-text">
+            <p class="profile-text-p1">Hello, I'm</p>
+            <h1 class="title">Chanmin Jeon</h1>
+            <p class="profile-text-p2">Aspiring Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn-cv" onclick="window.open('/images/resume')">Download CV</button>
+                <button class="btn-info" onclick="location.href='/#contact'">Contact Info</button>
             </div>
-            <div class="profile-text">
-                <p class="profile-text-p1">Hello, I'm</p>
-                <h1 class="title">Chanmin Jeon</h1>
-                <p class="profile-text-p2">Aspiring Software Engineer</p>
-                <div class="btn-container">
-                    <button class="btn-cv" onclick="window.open('/images/resume')">Download CV</button>
-                    <button class="btn-info" onclick="location.href='/#contact'">Contact Info</button>
-                </div>
-                <div id="socials-container">
-                    <img src="images/linkedin.png" 
-                    class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/chanmin-jeon-5aa7422a7/'">
-                    <img src="images/github.png" 
-                    class="icon"
-                    onclick="location.href='https://github.com/chanmin-jeon/'">
-                </div>
+            <div id="socials-container">
+                <img src="images/linkedin.png" 
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/chanmin-jeon-5aa7422a7/'">
+                <img src="images/github.png" 
+                class="icon"
+                onclick="location.href='https://github.com/chanmin-jeon/'">
             </div>
         </div>
     </section>
@@ -121,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#experience'">
+        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#skills'">
     </section>
     <section id="skills">
         <p class="profile-text-p1">Showcase of</p>
@@ -229,8 +226,50 @@
                 </div>
             </div>
         </div>
-        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#experience'">
+        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#projects'">
+    </section>
+    <section id="projects">
+        <p class="profile-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img src="images/youtube.png" class="project-img">
+                    <h2 class="skills-sub-title project-title">Youtube Clone</h2>
+                    <button class="btn-cv" onclick="location.href='https://github.com/chanmin-jeon/YouTube_Clone'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" class="icon arrow" onclick="location.href='/#contact'">
+    </section>
+    <section id="contact">
+        <p class="profile-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="images/email.png" class="icon contact-icon email-icon">
+                <p><a href="mailto:chanjeon1@icloud.com">chanjeon1@icloud.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="images/linkedin.png" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/chanmin-jeon-5aa7422a7/">LinkedIn</a></p>
+            </div>
+        </div>
     </section>
     <script src="script.js"></script>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>
