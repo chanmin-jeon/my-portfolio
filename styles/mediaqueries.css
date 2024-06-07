@@ -57,6 +57,11 @@
         height: 275px; 
     }
 
+    .project-img {
+        width: 350px; 
+        height: 350px; 
+    }
+
     .about-containers {
         margin-top: 0; 
         flex-wrap: wrap;
@@ -143,5 +148,7 @@
         text-align: justify;
         
     }
+
+    
 
 }
