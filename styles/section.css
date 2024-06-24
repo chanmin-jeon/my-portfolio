@@ -231,6 +231,11 @@ article .icon {
     align-items: center;
 }
 
+#projects .about-containers {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .project-title {
     margin: 1rem; 
@@ -243,8 +248,17 @@ article .icon {
     text-align: center;
     align-items: center;
     padding: 1rem; 
+    max-width: 60rem;
 }
 
+#projects .article-buttons-div {
+    display: flex; 
+    width: 80%; 
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center;
+    padding-bottom: 12px;
+}
 /* Contact */ 
 
 #contact {
